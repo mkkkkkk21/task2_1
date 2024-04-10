@@ -1,0 +1,22 @@
+h3 {
+    margin: 20px;
+}
+
+#time {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+#buttons button {
+    padding: 10px 20px;
+    margin-right: 5px;
+}
+
+#buttons {
+    margin: 0px 20px;
+}
+
+.inactive {
+    opacity: 0.6;
+  }

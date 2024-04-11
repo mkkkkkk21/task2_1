@@ -38,7 +38,7 @@ function setbuttonsinitial() {
 function setbuttonsrunning() {
     start.classList.add('inactive');
     stop.classList.remove('inactive');
-    reset.classList.add('inactive');
+    reset.classList.remove('inactive');
 }
 
 function setbuttonsstopped() {
@@ -73,6 +73,7 @@ reset.addEventListener("click", () => {
     if(reset.classList.contains('inactive') === true) {
         return;
     }
+    clearInterval(interval);
     setbuttonsinitial();
     time.textContent = '0:0:0:0';
     hours = 0;
